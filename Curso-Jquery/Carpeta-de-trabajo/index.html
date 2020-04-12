@@ -111,9 +111,82 @@
   </div>
 
   <script>
+    //tipos de selectores
+    // * GENERAL, tag ETIQUETA, id IDENTIFICADOR, class CLASE.
     $(function () {
-        $("img").hide();
-    });
+      /*$("*").hide();//ETIQUETA
+      $("H1").hide();//ELEMENTO
+      $("#MIELEMENTO").hide();//IDENTIFICADOR
+      $(".MICLASE").hide();//CLASE*/
+      //$("ul.iconized li:nth-child(2)").hide();//oculta el segundo hijo
+      //$("img:last-of-type").eq(5).hide();//oculta la imagen numero 5
+      //$("td:last-of-type").hide();
+      //EJERCICIOS
+      //$("tbody tr td:first-of-type").hide();//selectionar la primera columna del cuerpo de la tabla
+      //$("ul li:first-child").hide();// el primer elemento de la lista de dos manera distintas
+      //$("ul.iconized li").eq(0).hide();//de la segunda manera
+      //$(".iconized li:nth-child(1)").hide();//otrra manera
+      //$("input:last-of-type").hide();// el ultimo campo del formulario antes del botón
+      //$("input:nth-child(4)").hide();//otra manera
+      //el ultmimo elemento de las listas
+      //$("ul.iconized li:last-child").hide();
+
+      //LISTA DE SELECTORES JQUERY MÁS USADOS
+      /*
+      * :eq(index)
+      :has("")
+      :contains("")
+      :even /:odd
+      :input (inputs, textarea, select, buttons)
+      :gt(index)/ :lt(index)
+      :first/ :last(.first() .last() actualmente)
+      */
+      //Ejemplo de has()
+      //$("form").has("input[type='password']").hide();//elementos que tengas input con tipo password
+      //Para los elementos pares even y los impares odd
+      /*ejemplo
+      $("tbody tr:even").hide();*/
+      /*
+      //Obtener el valor de una sola propiedad
+    //MUY IMPORTANTE: La propiedad se obtiene del PRIMER ELEMENTO que nos devuelve el selector.
+    var valor =  $("some_selector").css("propiedad");
+
+    //Ejemplo
+    var color = $("li").css("color");
+
+    //Establecer el valor de una propiedad para todos los elementos que nos devuelve el selector
+    $("some_selector").css("propiedad","valor");
+
+    //Ejemplo (Incremento en 50px el valor actual)
+    $("img").css("width","+=50");
+
+
+    //Pasando una funcíon que recibe como parámetros la posición dentro de los seleccionado y el antiguo valor
+    $("some_selector").css("propiedad",function(index, valor))  {
+        //$(this) hará referencia el elemento actual
+    });*/
+    //Para varias propiedades:
+    //Si queremos obtener varias propiedades CSS del PRIMER ELEMENTO que nos devuelva el selector
+     /* //Devuelve una ARRAY
+      var props = $("some_selector").css([ "prop1","prop2",....."propn"]);
+
+      //Ejemplo 
+      var colores = $("li").css(["color","background-color"]);
+
+      //Para establecer el valor de varias propiedades en los elementos seleccionados 
+      $("some_selector").css( {
+          prop1: valor1, //o expresión/función
+          prop2: valor2, //o expresión/función
+          ....
+          propN: valorn //o expresión / función
+      });
+
+      //Ejemplo
+      $("li").css({
+          color: #FFF,
+          background-color: #000
+      });*/
+          });
   </script>
 
 </body>
