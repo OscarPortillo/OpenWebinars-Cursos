@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    
+    <script src="js-local/compresed/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+
+    <button id="generateIp" class="btn btn-success">Generar IP</button>
+    <p></p>
+    <script>
+        $(document).ready(function() {
+            $("#generateIp").on("click", function() {
+                generarIPAleatoria();
+            })
+        });
+        function generarIPAleatoria() {
+            let pBitIdRed = Math.floor(Math.random() * 255) + 1;
+            let sBitIdRed = Math.floor(Math.random() * 255);
+            let pBitIdHost = Math.floor(Math.random() * 255);
+            let sBitIdHost = Math.floor(Math.random() * 255);
+            let idRed = pBitIdRed+"."+sBitIdRed;
+            let idHost = pBitIdHost+"."+sBitIdHost;
+            let ip = idRed+"."+idHost;
+            console.log(ip)
+            let = texto = "La IP generada es:";
+            console.log(texto)
+            $('p').text("");
+            $('p').text(texto+" "+ip)
+        }
+        
+            //Tarea entregada
+    </script>
+</body>
+</html>
