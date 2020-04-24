@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar Página</title>
+    <script>
+        window.onload = actualizarPagina();
+        
+        function actualizarPagina() {
+            let actualizar = false;
+            momentoActual = new Date();
+            hora = momentoActual.getHours();
+            minuto = momentoActual.getMinutes();
+            segundo = momentoActual.getSeconds();
+
+            str_segundo = new String (segundo);
+            if (str_segundo.length == 1) {
+                segundo = "0" + segundo;
+            }
+            str_minuto = new String (minuto);
+            if (str_minuto.length == 1){
+                minuto = "0" + minuto;
+            }
+            str_hora = new String (hora);
+            if (str_hora.length == 1){
+                hora = "0" + hora;
+            }
+            horaImprimible = hora + ":" + minuto + ":" + segundo;
+            if(horaImprimible == "12:30:00") {
+                actualizar = true;
+            }
+            setTimeout("actualizarPagina()",1000);
+            if(actualizar == true) {//Comprueba que la hora es igual a la que quieres y actualiza
+                location.reload();
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Esta página se actualizará a cierta hora: 12:30:00 por ejemplo</h1>
+</body>
+</html>
