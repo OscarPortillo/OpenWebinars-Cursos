@@ -1,0 +1,22 @@
+.container {
+    background-color: green;
+    color: white;
+    height: 900px;
+}
+.row div {
+    height: 50px;
+}
+.red{
+    background-color: red;
+}
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.black {
+    background-color: black;
+}
