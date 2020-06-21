@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Componente Nav</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" ref="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <p>Usando la etiqueta ul con las clases nav, nav-item, nav-link</p>
+      <ul class="nav bg-dark">
+        <li class="nav-item">
+          <a href="" class="nav-link active">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">Noticias</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">Contacto</a>
+        </li>
+      </ul>
+      <p class="mt-4">Usando la etiqueta nav con la clase nav, nav-link</p>
+      <nav class="nav bg-warning">
+        <a href="" class="nav-link active">Inicio</a>
+        <a href="" class="nav-link">Nosotros</a>
+        <a href="" class="nav-link">Noticias</a>
+        <a href="" class="nav-link">Contacto</a>
+      </nav>
+      <p class="mt-4">Usando la etiqueta nav con la clase nav-tabs, nav-link</p>
+      <nav class="nav nav-tabs">
+        <a href="" class="nav-link active">Inicio</a>
+        <a href="" class="nav-link">Nosotros</a>
+        <a href="" class="nav-link">Noticias</a>
+        <a href="" class="nav-link">Contacto</a>
+      </nav>
+      <p class="mt-4">Usando la etiqueta nav con la clase nav-pills, nav-link</p>
+      <nav class="nav nav-pills">
+        <a href="#inicio" class="nav-link" data-toggle="tab">Inicio</a>
+        <a href="#novedades" class="nav-link active" data-toggle="tab">Nosotros</a>
+        <a href="#noticias" class="nav-link" data-toggle="tab">Noticias</a>
+        <a href="#contacto" class="nav-link" data-toggle="tab">Contacto</a>
+      </nav>
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="inicio">Contenido del Panel Inicio</div>
+        <div class="tab-pane fade" id="novedades">Contenido del Panel Novedades</div>
+        <div class="tab-pane fade" id="noticias"> Contenido del Panel Noticias</div>
+        <div class="tab-pane fade" id="contacto">Contenido del Panel Contacto</div>
+      </div>
+      <div class="row">
+        <div class="col-md-10">
+          <h3>Funciones asociadas</h3>
+          <ul>
+            <li>.tab(): Activa una pestaña. Debe tener el atributo data-target o el href correcto.</li>
+            <li>.tab('show'): Dada una pestaña muestra el panel asociado.</li>
+            <li>.tab('dispose'): Destruye el componente. Deja de funcionar como tal.</li>
+          </ul>
+          <p>Los eventos que se generan son 4:</p>
+          <ul>
+            <li>hide.bs.tab</li>
+            <li>show.bs.tab</li>
+            <li>hidden.bs.tab</li>
+            <li>shown.bs.tab</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
