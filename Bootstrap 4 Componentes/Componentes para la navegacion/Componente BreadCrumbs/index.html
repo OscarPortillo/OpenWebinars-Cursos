@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>Componente Nav</title>
+    <title>Componente BreadCrumb</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -9,27 +9,13 @@
   </head>
   <body>
     <div class="container">
-     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-       <a href="#" class="navbar-brand">
-         <img src="logo.png" alt="mi logo" style="width: 50px; height: 50px;">
-       </a>
-       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
-         <span class="navbar-toggler-icon"></span>
-        </button>
-        <span class="navbar-text text-white">Aprende con nosotros</span>
-        <div class="collapse navbar-collapse" id="menu">
-          <nav class="navbar-nav">
-            <a href="#" class="nav-link">Inicio</a>
-            <a href="#" class="nav-link">Novedades</a>
-            <a href="#" class="nav-link">Nosotros</a>
-            <a href="#" class="nav-link">Contacto</a>
-          </nav>
-        </div>
-        <form action="" class="form-inline">
-          <input type="search" class="form-control form-control-sm mr-md-2" placeholder="Buscar">
-          <input type="submit" class="btn btn-primary" value="Buscar">
-        </form>
-      </nav>
+     <nav>
+       <div class="breadcrumb">
+         <div class="breadcrumb-item">Inicio</div>
+         <div class="breadcrumb-item">Noticias</div>
+         <div class="breadcrumb-item active">Últimas noticias</div>
+       </div>
+     </nav>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
