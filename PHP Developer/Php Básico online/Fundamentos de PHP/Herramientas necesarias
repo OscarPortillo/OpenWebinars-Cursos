@@ -1,0 +1,11 @@
+Herramientas necesarias
+Instalación en windows
+Instalaremos Xampp
+Descarga para windows
+
+Instalación Linux
+En Linux descargaremos las herraientas desde la linea de comandos con apt install php
+
+sudo apt install apache2 php7.2 php7.2-cli php7.2-common php7.2-mysql libapache2-mod-php7.2
+Editor para desarrollar
+Utilizaremos Sublime text
